@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Keseharian | Champion SI-3H</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="container">
+
+    <!-- HEADER -->
+    <header class="hero">
+        <div class="logo">🏆</div>
+        <p class="eyebrow">CHAMPION SI-3H</p>
+        <h1>Quiz Keseharian</h1>
+        <p>Test Your Knowledge • JavaScript Practice</p>
+    </header>
+
+    <!-- HALAMAN LOGIN -->
+    <section class="login-card" id="loginCard">
+
+        <div class="login-icon">🎓</div>
+
+        <h2>Welcome, Mahasiswa!</h2>
+
+        <p class="login-desc">
+            Silakan lengkapi identitas diri untuk memulai
+            tantangan Quiz Keseharian.
+        </p>
+
+        <form id="formLogin">
+
+            <div class="input-group">
+                <label for="nama">👤 Nama Lengkap</label>
+                <input
+                    type="text"
+                    id="nama"
+                    placeholder="Masukkan nama lengkap"
+                    required
+                >
+            </div>
+
+            <div class="input-group">
+                <label for="nim">🪪 Nomor Induk Mahasiswa</label>
+                <input
+                    type="text"
+                    id="nim"
+                    placeholder="Masukkan NIM"
+                    required
+                >
+            </div>
+
+            <div class="input-group">
+                <label for="kelas">🏫 Kelas</label>
+                <input
+                    type="text"
+                    id="kelas"
+                    placeholder="Contoh: SI-3H"
+                    required
+                >
+            </div>
+
+            <button type="submit" class="login-button">
+                MULAI QUIZ SEKARANG →
+            </button>
+
+        </form>
+
+        <div class="login-footer">
+            ✨ Isi identitas dengan benar sebelum memulai.
+        </div>
+
+    </section>
+
+    <!-- HALAMAN QUIZ -->
+    <section class="quiz-card hidden" id="quizCard">
+
+        <div class="student-info">
+            <h3>👤 Identitas Peserta</h3>
+            <p id="infoPeserta"></p>
+        </div>
+
+        <div class="quiz-top">
+            <span id="infoSoal">Soal 1 dari 10</span>
+            <span id="infoNilai">Benar: 0</span>
+        </div>
+
+        <div class="progress-track">
+            <div id="progressBar"></div>
+        </div>
+
+        <div id="areaQuiz"></div>
+
+        <div id="areaHasil" class="hidden"></div>
+
+    </section>
+
+    <!-- INFORMASI -->
+    <section class="note-card">
+        <h2>📚 Tentang Quiz</h2>
+
+        <p>
+            Quiz ini terdiri dari 10 pertanyaan sederhana
+            untuk menguji pengetahuan tentang kehidupan
+            sehari-hari dan teknologi.
+        </p>
+
+        <div class="feature-list">
+            <div>📝 10 Pertanyaan</div>
+            <div>⏱️ Interaktif</div>
+            <div>🏆 Hasil Nilai Otomatis</div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Praktikum Pemrograman Web</p>
+        <p>© 2026 Champion <SI-3H></SI-3H></p>
+    </footer>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
